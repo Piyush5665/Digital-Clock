@@ -168,13 +168,13 @@ body {
     .left {
         /* position: relative; */
         /* position: absolute; */
-        height: 210px;
-        width: 210px;
-        border-radius: 105px;
+        height: 220px;
+        width: 220px;
+        border-radius: 110px;
 
         margin-left: 10px;
         left: 100px;
-        top: 300px;
+        top: 340px;
 
     }
 
@@ -183,7 +183,7 @@ body {
         width: 260px;
         border-radius: 130px;
 
-        right: 150px;
+        right: 130px;
         bottom: 400px;
         margin-right: 10px;
 

@@ -26,7 +26,7 @@ body {
 
 .container {
     width: 750px;
-    height: 300px;
+    height: 290px;
     padding-inline: 10px;
     /* border: 2px solid black; */
     display: flex;
@@ -35,20 +35,29 @@ body {
     align-items: center;
     border-radius: 36px;
     /* margin-bottom: 70px; */
-    background-color: rgb(0, 0, 0, 0.7);
-    box-shadow: 0 0 4px 3px black;
+
+    box-shadow: rgba(0, 0, 0, 0.059) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: rgba(255, 255, 255, 0.06);
     z-index: 2;
+    backdrop-filter: blur(30px);
     
+
+
 }
 
 
 .clock_hands {
-    backdrop-filter: blur(10px);
-    
+    backdrop-filter: blur(70px);
+
+
     width: 160px;
     height: 170px;
     /* border: 2px solid black; */
-    box-shadow: 0 0 0 2px black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+        rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+        rgba(0, 0, 0, 0.07) 0px 16px 16px;
     /* background-color: transparent; */
     color: white;
     font-size: 7rem;
@@ -75,11 +84,16 @@ body {
     width: 85px;
     /* border: 2px solid black; */
     margin-left: 10px;
-    box-shadow: 0 0 1px 2px black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+        rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+        rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    backdrop-filter: blur(70px);
     font-size: 2rem;
     font-weight: bold;
     padding: 22px 12px;
     text-align: center;
+
 
 }
 
@@ -97,9 +111,9 @@ body {
     width: 260px;
     border-radius: 130px;
     position: relative;
-    left: 11%;
-    top: 8%;
-    background-color: orange;
+    left: 9.5%;
+    top: 14%;
+    background: linear-gradient(180deg, #facf29, #ff3124);
     animation: oscillation 4s ease-in-out 0.2s infinite alternate;
 }
 
@@ -108,9 +122,9 @@ body {
     width: 300px;
     border-radius: 150px;
     position: relative;
-    right: 11%;
+    right: 12%;
     bottom: 22%;
-    background-color: rgb(75, 167, 210);
+    background: linear-gradient(180deg, #02ccfc, #0a2dbb);
     animation: oscillation 4s ease-in-out 0.2s infinite alternate;
 }
 
@@ -123,4 +137,108 @@ body {
     100% {
         transform: translateY(70px);
     }
+}
+
+
+
+/* *MEDIA QUERIES */
+
+@media screen and (max-width: 1360px) {
+    .left {
+        height: 220px;
+        width: 220px;
+        border-radius: 110px;
+        position: relative;
+        left: 9.5%;
+        top: 9%;
+    }
+
+    .right {
+        height: 260px;
+        width: 260px;
+        border-radius: 130px;
+        position: relative;
+        right: 12%;
+        bottom: 18%;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .left {
+        /* position: relative; */
+        /* position: absolute; */
+        height: 210px;
+        width: 210px;
+        border-radius: 105px;
+
+        margin-left: 10px;
+        left: 100px;
+        top: 300px;
+
+    }
+
+    .right {
+        height: 260px;
+        width: 260px;
+        border-radius: 130px;
+
+        right: 150px;
+        bottom: 400px;
+        margin-right: 10px;
+
+    }
+
+    .container {
+        height: 800px;
+        width: 250px;
+        padding-inline: 10px;
+        /* border: 2px solid black; */
+        transition: 1s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        /* gap: 20px;    */
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 36px;
+        /* margin-bottom: 70px; */
+
+        box-shadow: rgba(0, 0, 0, 0.059) 0px 10px 15px -3px,
+            rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        background-color: rgba(255, 255, 255, 0.06);
+        z-index: 2;
+        backdrop-filter: blur(30px);
+        
+
+
+    }
+
+    .big_colon {
+        display: none;
+    }
+
+    
+
+
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .left {
+        display: none;
+
+    }
+
+    .right {
+        display: none;
+
+    }
+
+
+
+
+
+
 }

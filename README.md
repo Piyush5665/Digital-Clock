@@ -1,7 +1,7 @@
 # Digital-Clock
 
 This project showcases a beautiful and responsive digital clock that displays the current time in a sleek and elegant design. 
-<br>Built using HTML, CSS and Javascript, It adapts to different screen sizes and orientations.
+The clock is built using HTML, CSS and Javascript, It adapts to different screen sizes and orientations.
 <br><br><br>
 
 ## Key Concepts
